@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "produs": "J&B",
+      "cantitate": 2
+    },
+    {
+        "id": 2,
+        "produs": "Jack Daniels",
+        "cantitate": 4
+    },
+    {
+        "id": 3,
+        "produs": "Captain Morgan",
+        "cantitate": 3
+    },
+    {
+        "id": 4,
+        "produs": "Tatratea",
+        "cantitate": 2
+    },
+    {
+        "id": 5,
+        "produs": "Angelli Cherry",
+        "cantitate": 2
+    }
+]

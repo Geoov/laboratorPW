@@ -1,0 +1,22 @@
+<body>
+
+<br/>
+<br/>
+<!-- <%- (uname!== undefined) ? "Bine ai venit " + uname : "" -%> -->
+<br/>
+<h2> Chestionar </h2>
+
+<form action="/rezultat-chestionar" method="POST">
+
+  <% for(let i = 0; i< intrebari.length; i++) { %>
+    <p> Întrebarea <%- i + 1%>: </p><br/>
+
+    <% for(let j = 0; j< intrebari[i].variante.length; j++) {%>
+      <input type="radio" name="q<%- i %>" value="<%- j %>"><%- intrebari[i].variante[j] %><br/>
+    <% } %>
+
+  <% } %>
+  <br/><br/>
+  <input type="submit" value="Submit">
+</form>
+</body>

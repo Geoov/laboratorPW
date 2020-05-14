@@ -1,0 +1,34 @@
+<body>
+</br>
+
+ <!-- <%- (uname !== undefined) ? "Bine aţi venit, " + uname : "" -%> -->
+
+</br></br>
+
+<a class="aIndex" href="/creare-bd">Creare BD</a></br></br>
+
+<a class="aIndex" href="/inserare-bd">Încărcare BD</a></br></br>
+
+<% if(produse !== "") { %>
+<table>
+    <tr>
+        <th>Produs</th>
+        <th>Cantitate</th>
+        <% if (uname !== undefined) { %> 
+            <th>Opţiuni</th>
+        <% } %>
+    </tr>
+
+    <% for(var id in produse){ %>
+        <tr>
+            <td><%- produse[id]['nume'] -%></td>
+            <td><%- produse[id]['cantitate'] -%></td>
+            <% if(uname !== undefined) { %> 
+                <td> <a class="aIndex" href="adaugare_cos?id=<%- produse[id]['id'] -%>"" >Adaugă în coş</a> </td>
+            <% } %>
+        </tr>
+    <% } %>
+</table>
+<% } %>
+
+</body>

@@ -1,0 +1,148 @@
+html, body{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+code {
+    font-size: 14px;
+}
+
+header {
+    background-color: #395177;
+    position: relative;
+    height: 25vh;
+    min-height: 400px;
+    padding-top: 5rem;
+    /*background-size: cover;*/
+}
+
+header::before {
+    background-image: -webkit-gradient(linear,left top,right top,from(#21c8f6),color-stop(99%,rgba(99,123,255,0)));
+    background-image:linear-gradient(90deg,#21c8f6 0,rgba(99,123,255,0) 99%);
+}
+
+header::before{
+      width:882px;
+      height: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+}
+
+#headerH1{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10rem;
+    align-items: center;
+}
+
+#headerH2{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10rem;
+    align-items: center;
+}
+
+#nav{
+    
+    align-items: center;
+    background-color: #212529;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav a {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active, nav a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+nav #user-container {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+nav h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+main {
+    display:block;
+    padding: 0rem 0rem 2rem 2rem;
+}
+
+#footer {
+    margin-top: auto;
+    background-color: #212529;
+    padding: 1rem 2rem 1rem;
+}
+
+#footer p {
+    font-size: 1.2rem;
+    color:white;
+    display: inline;
+}
+
+/* finish layout.ejs */
+
+.aIndex {
+    color: rgb(99,123,255);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.aIndex:hover, .aIndex:active, .aIndex:visited {
+    color: rgb(99,123,255);
+    text-decoration: underline;
+}
+
+table {
+    background: #f5f5f5;
+    border: 2px solid rgb(99,123,255);
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    font-size: 1.5rem;
+    line-height: 24px;
+    margin: 30px auto;
+    text-align: left;
+    width: 800px;
+}
+
+/* table td {
+    text-align: center;
+} */

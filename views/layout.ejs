@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>NodeJS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+      <h1 id="headerH1">Inceputul.. </h1>
+      <h2 id="headerH2">NodeJS</h2>
+    </header>
+
+    <div id="nav">
+        <nav>
+            <div class="nav-row">
+            
+                <a href="/">Acasă</a>
+                <a href="/chestionar">Chestionar</a>
+                <% if(locals.user) { %>
+                <a href="/vizualizare-cos">Vizualizare coş</a>
+                <a href="/logout">Logout</a>
+                <div id="user-container"><h5>Bine aţi venit, <%- locals.user -%></h5></div>
+                <% } else{ %>
+                <a href="/autentificare">Autentificare</a>
+                <% } %>
+            
+            </div>
+        </nav>
+    </div>
+
+    <main id = "continut">
+      <%- body -%>
+    </main>
+
+   <footer id="footer">
+        <p>&copy;.2020.Programare web</p>
+    </footer>
+</body>
+
+</html>

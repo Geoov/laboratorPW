@@ -1,0 +1,35 @@
+<body>
+
+
+    <br/>
+    <br/>
+    <br/>
+
+    Produse achiziţionate
+
+    <table>
+        <tr>
+            <th>Produse </th>
+            <th>Cantitate</th>
+        </tr>
+    
+        <% for(var id in shoppingCart){ %>
+            <tr>
+                <td>
+                    <% for(var i in produse)
+                    {
+                        if(produse[i]['id'] == shoppingCart[id]['_id']) {
+                    %>
+
+                    <%- produse[i]['produs'] -%>
+                    
+                    <% } %>
+                    <% } %>
+                </td>
+                <td><%- shoppingCart[id]['quantity'] -%></td>
+            </tr>
+        <% } %>
+    
+    </table>
+
+</body>
